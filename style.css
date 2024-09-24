@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+}
+/*COMEÇO DA PAGINA*/ 
+body {
+    background-color: #482D5F;
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+header {
+    position: fixed;
+    background-color: #613D81;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 2rem 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.navbar {
+    display: block;
+}
+
+.menu ul li{
+    display: inline-flex;
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #B470F0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu a:hover{
+    color: #ffffff;
+    border-bottom: 0.1rem solid #ffffff;
+    text-shadow: 0px 0px 4px #B470F0;
+}
+
+#github {
+    right: 2rem;
+    position: absolute;
+    font-size: 40px;
+}
+
+#github:hover {
+    font-size: 45px;
+    color: #fffeff;
+}
+/*MEIO DA PAGINA*/
+
+.inicioapresentacao {
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 800px;
+    text-shadow: 0px 0px 12px #000;
+}
+.apresentacao {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#finalapresentacao {
+    margin-top: 1rem;
+}
+
+span {
+    color: #e0aaff;
+    text-transform: uppercase;
+    text-shadow: 0px 3px 4px #000;
+    font-weight: bold;
+}
+
+span, p{
+    font-size: 20px;
+}
+
+
+img {
+    display: flex;
+    max-height: 600px;
+    border-radius: 2rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 12px #000;
+}
+
+/*FINAL DA PAGINA*/
+
+.fundocaixa {
+    background-image: url('IMAGENS/terraria.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.info, .sobre1, .habilidades1, .competencia1  {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    padding-top: 2rem;
+    margin: auto;
+}
+
+.cardinfo, .cardsobre, .cardhabilidades, .cardcompetencia {
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.caixainfo, .caixasobre, .caixahabilidades, .caixacompetencia {
+    background: #7b4da3b7;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    box-shadow: 0px 0px 12px #482D5F;
+}
+
+.caixasobre p {
+text-align: justify;
+}
+
+.caixainfo i {
+    margin-right: 1rem;
+}
+
+h4 {
+    font-weight: 200;
+}
+
+/*FOOTER*/
+.rodape {  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #613D81;
+    padding: 1.5rem;
+}
+
+.rodape a { 
+    margin: 0 50px;
+    text-decoration: none;
+    color: #B470F0;
+
+}
+
+.rodape a:hover {
+    color: #ffffff;
+    border-bottom: 0.1rem solid #ffffff;
+    padding-bottom: 0.2rem;
+}
+
+.rodape i {
+    margin-right: 1rem;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px){
+
+    .menu {
+        max-width: 700px;
+        margin-right: 9rem;
+    }
+
+    .menu a {
+        font-size: 17px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .inicioapresentacao {
+        align-items: center;
+        padding-left: 6rem;
+        margin-top: 100px;
+    }
+
+    .apresentacao {
+        width: 50vw;
+        text-align: center;
+        align-items: center;
+        margin: 2em 2em;
+    }
+
+    img {
+        display: none;
+    }
+
+    .caixainfo, .caixasobre, .caixahabilidades, .caixacompetencia {
+        display: block;
+        width: 50vw;
+
+    }
+}
