@@ -106,7 +106,7 @@ img {
 /*FINAL DA PAGINA*/
 
 .fundocaixa {
-    background-image: url('IMAGENS/terraria.png');
+    background-image: url('/terraria.png');
     background-repeat: no-repeat;
     background-size: cover;
 } 
